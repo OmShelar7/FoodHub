@@ -119,6 +119,7 @@ if(isset($_POST['submit1'] ))
   <div class="thumbnail"><img src="images/manager.png"/></div>
   
   <form class="register-form" action="index.php" method="post">
+	
     <input type="text" placeholder="username" name="cr_user"/>
     <input type="text" placeholder="email address"  name="cr_email"/>
 	 <input type="password" placeholder="password"  name="cr_pass"/>
@@ -127,7 +128,6 @@ if(isset($_POST['submit1'] ))
    <input type="submit"  name="submit1" value="Create" />
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
-  <span>username:admin</span>&nbsp;<span>password:1234</span>
   <span style="color:red;"><?php echo $message; ?></span>
    <span style="color:green;"><?php echo $success; ?></span>
   <form class="login-form" action="index.php" method="post">

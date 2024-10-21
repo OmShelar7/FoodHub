@@ -1,9 +1,9 @@
 <?php
 
 //main connection file for both admin & front end
-$servername = "localhost"; //server
-$username = "root"; //username
-$password = ""; //password
+$servername = "cc-rds-food-website.cbwwcgsuahye.eu-north-1.rds.amazonaws.com"; //server
+$username = "admin"; //username
+$password = "12345678"; //password
 $dbname = "online_rest";  //database
 
 // Create connection

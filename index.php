@@ -14,24 +14,29 @@ session_start(); //start temp session until logout/browser closed
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>FoodHub</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animsition.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet"> </head>
+    <link href="css/style.css" rel="stylesheet"> 
+
+    <link rel="icon" type="image/x-icon" href="images/FH.svg">
+
+
+</head>
 
 <body class="home">
     
         <!--header starts-->
         <header id="header" class="header-scroll top-header headrom">
             <!-- .navbar -->
-            <nav class="navbar navbar-dark">
+            <nav class="navbar navbar-dark" >
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
+                    <a class="navbar-brand" href="index.php"> <img src="images/Foodhub.svg" alt="Foodhub" class="logo" style="width: 230px; height: auto; position: absolute; top: -40px; left: 10px;"> </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
@@ -62,21 +67,17 @@ session_start(); //start temp session until logout/browser closed
             <!-- /.navbar -->
         </header>
         <!-- banner part starts -->
-        <section class="hero bg-image" data-image-src="images/img/main.jpeg">
+        <section class="hero bg-image" data-image-src="images/img/main.jpg">
             <div class="hero-inner">
                 <div class="container text-center hero-text font-white">
-                    <h1>Order Delivery & Take-Out </h1>
-                    <h5 class="font-white space-xs">Find restaurants, specials, and coupons for free</h5>
-                    <div class="banner-form">
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <label class="sr-only" for="exampleInputAmount">I would like to eat....</label>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="exampleInputAmount" placeholder="I would like to eat...."> </div>
-                            </div>
-                            <button onclick="location.href='restaurants.html'" type="button" class="btn theme-btn btn-lg">Search food</button>
-                        </form>
-                    </div>
+                <br>
+                    <h1>Simply Delicious: Your Gateway To Good Food </h1>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
                     <div class="steps">
                         <div class="step-item step1">
                             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483 483" width="512" height="512">
@@ -136,7 +137,7 @@ session_start(); //start temp session until logout/browser closed
 															<div class="content">
 																<h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
 																<div class="product-name">'.$r['slogan'].'</div>
-																<div class="price-btn-block"> <span class="price">$'.$r['price'].'</span> <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+																<div class="price-btn-block"> <span class="price">₹'.$r['price'].'</span> <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> </div>
 															</div>
 															
 														</div>
@@ -269,7 +270,7 @@ session_start(); //start temp session until logout/browser closed
 																<div class="col-xs-12 col-sm-9 col-md-12 col-lg-9">
 																	<h5><a href="dishes.php?res_id='.$rows['rs_id'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].'</span>
 																	<div class="bottom-part">
-																		<div class="cost"><i class="fa fa-check"></i> Min $ 10,00</div>
+																		<div class="cost"><i class="fa fa-check"></i> Min ₹ 10,00</div>
 																		<div class="mins"><i class="fa fa-motorcycle"></i> 30 min</div>
 																		<div class="ratings"> <span>
 																				<i class="fa fa-star"></i>
@@ -300,41 +301,14 @@ session_start(); //start temp session until logout/browser closed
                
             </div>
         </section>
-        <!-- Featured restaurants ends -->
-        <section class="app-section">
-            <div class="app-wrap">
-                <div class="container">
-                    <div class="row text-img-block text-xs-left">
-                        <div class="container">
-                            <div class="col-xs-12 col-sm-5 right-image text-center">
-                                <figure> <img src="images/app.png" alt="Right Image" class="img-fluid"> </figure>
-                            </div>
-                            <div class="col-xs-12 col-sm-7 left-text">
-                                <h3>The Best Food Delivery App</h3>
-                                <p>Now you can make food happen pretty much wherever you are thanks to the free easy-to-use Food Delivery &amp; Takeout App.</p>
-                                <div class="social-btns">
-                                    <a href="#" class="app-btn apple-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-apple"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">App Store</span> </div>
-                                    </a>
-                                    <a href="#" class="app-btn android-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-android"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">Play store</span> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!-- start: FOOTER -->
         <footer class="footer">
             <div class="container">
                 <!-- top footer statrs -->
                 <div class="row top-footer">
                     <div class="col-xs-12 col-sm-3 footer-logo-block color-gray">
-                        <a href="#"> <img src="images/food-picky-logo.png" alt="Footer logo"> </a> <span>Order Delivery &amp; Take-Out </span> </div>
+                        <a href="#">  </a> <span> Simply Delicious: Your Gateway To Good Food</span> </div>
                     <div class="col-xs-12 col-sm-2 about color-gray">
                         <h5>About Us</h5>
                         <ul>
@@ -367,16 +341,16 @@ session_start(); //start temp session until logout/browser closed
                     <div class="col-xs-12 col-sm-3 popular-locations color-gray">
                         <h5>Popular locations</h5>
                         <ul>
-                            <li><a href="#">Sarajevo</a> </li>
-                            <li><a href="#">Split</a> </li>
-                            <li><a href="#">Tuzla</a> </li>
-                            <li><a href="#">Sibenik</a> </li>
-                            <li><a href="#">Zagreb</a> </li>
-                            <li><a href="#">Brcko</a> </li>
-                            <li><a href="#">Beograd</a> </li>
-                            <li><a href="#">New York</a> </li>
-                            <li><a href="#">Gradacac</a> </li>
-                            <li><a href="#">Los Angeles</a> </li>
+                            <li><a href="#">Mumbai</a> </li>
+                            <li><a href="#">Nagpur</a> </li>
+                            <li><a href="#">Nashik</a> </li>
+                            <li><a href="#">Amravati</a> </li>
+                            <li><a href="#">Thane</a> </li>
+                            <li><a href="#">Solapur</a> </li>
+                            <li><a href="#">Dhule</a> </li>
+                            <li><a href="#">Satara</a> </li>
+                            <li><a href="#">Jalna</a> </li>
+                            <li><a href="#">Pune</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -384,34 +358,11 @@ session_start(); //start temp session until logout/browser closed
                 <!-- bottom footer statrs -->
                 <div class="bottom-footer">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-3 payment-options color-gray">
-                            <h5>Payment Options</h5>
-                            <ul>
-                                <li>
-                                    <a href="#"> <img src="images/paypal.png" alt="Paypal"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"> <img src="images/mastercard.png" alt="Mastercard"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"> <img src="images/maestro.png" alt="Maestro"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"> <img src="images/stripe.png" alt="Stripe"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"> <img src="images/bitcoin.png" alt="Bitcoin"> </a>
-                                </li>
-                            </ul>
-                        </div>
+                       
                         <div class="col-xs-12 col-sm-4 address color-gray">
-                            <h5>Address</h5>
-                            <p>Concept design of oline food order and deliveye,planned as restaurant directory</p>
-                            <h5>Phone: <a href="tel:+080000012222">080 000012 222</a></h5> </div>
-                        <div class="col-xs-12 col-sm-5 additional-info color-gray">
-                            <h5>Addition informations</h5>
-                            <p>Join the thousands of other restaurants who benefit from having their menus on TakeOff</p>
-                        </div>
+                           
+                            <h5>Made by :- OM Shelar </h5></div>
+                        
                     </div>
                 </div>
                 <!-- bottom footer ends -->
